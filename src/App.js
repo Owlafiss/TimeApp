@@ -1,7 +1,7 @@
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import moment from 'moment';
 
-import timeDisplay from './Components/timeDisplay;';
+import timeDisplay from './Components/timeDisplay';
 
 import React from 'react';
 import logo from './logo.svg';
