@@ -10,8 +10,8 @@ import './App.css';
 
 function App() {
 
-    let currentTime = moment().format('MM DD YYYY, k:mm:ss');
-    let futureTime = moment().add(30, 'minutes').format('MM DD YYYY, k:mm:ss');
+    let currentTime = moment().format('MM DD YYYY, HH:mm:ss');
+    let futureTime = moment().add(30, 'minutes').format('MM DD YYYY, HH:mm:ss');
     const clipBoardText = `${futureTime} Naverland 9 2600`;
 
   return (
