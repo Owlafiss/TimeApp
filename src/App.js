@@ -2,7 +2,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import moment from 'moment';
 import React from 'react';
 
-import timeDisplay from './Components/timeDisplay';
+import TimeDisplay from './Components/timeDisplay';
 
 import logo from './logo.svg';
 import './App.css';
@@ -19,9 +19,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <timeDisplay time = {currentTime} text = {'Current'}/>
+        <TimeDisplay time = {currentTime} text = {'Current'}/> 
+        <br />
+        <br />
 
-        <timeDisplay time = {futureTime} text = {'Your'} />
+        <TimeDisplay time = {futureTime} text = {'Your'} />
 
         <CopyToClipboard text = {clipBoardText}>
           <button>

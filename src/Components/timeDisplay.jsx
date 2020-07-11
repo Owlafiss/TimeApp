@@ -2,11 +2,11 @@ import React from 'react';
 
 
 
-function timeDisplay(props) {
+function TimeDisplay(props) {
     return (
         <>
             <span>
-                {props.text} Time is: <br />
+                {props.text} Time is: <br/>
                 {props.time}
             </span>
 
@@ -18,4 +18,4 @@ function timeDisplay(props) {
     )
 }
 
-export default timeDisplay;
+export default TimeDisplay;
