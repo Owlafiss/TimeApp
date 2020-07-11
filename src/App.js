@@ -1,17 +1,17 @@
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import moment from 'moment';
+import React from 'react';
 
 import timeDisplay from './Components/timeDisplay';
 
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 
 function App() {
 
-    let currentTime = moment().format('MM DD YYYY, HH:mm:ss');
-    let futureTime = moment().add(30, 'minutes').format('MM DD YYYY, HH:mm:ss');
+    let currentTime = moment().format('MMMM Do YYYY, h:mm:ss a');
+    let futureTime = moment().add(30, 'minutes').moment().format('MMMM Do YYYY, h:mm:ss a');
     const clipBoardText = `${futureTime} Naverland 9 2600`;
 
   return (
@@ -28,7 +28,6 @@ function App() {
             Copy
           </button>
         </CopyToClipboard>
-
       </header>
     </div>
   );
